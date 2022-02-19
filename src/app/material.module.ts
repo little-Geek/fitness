@@ -44,12 +44,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {OverlayModule} from '@angular/cdk/overlay';
-
+import{MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
-    imports:[MatButtonModule,MatIconModule],
-    exports:[MatButtonModule ,MatIconModule]
+    imports:[MatButtonModule,MatIconModule,MatInputModule,MatFormFieldModule,MatDatepickerModule,MatNativeDateModule,MatCheckboxModule,MatSidenavModule,MatToolbarModule,MatListModule,MatTabsModule,MatCardModule,MatSelectModule,MatProgressSpinnerModule,MatDialogModule,MatTableModule,MatSortModule,MatPaginatorModule],
+   exports:[MatButtonModule,MatIconModule,MatInputModule,MatFormFieldModule,MatDatepickerModule,MatNativeDateModule,MatCheckboxModule,MatSidenavModule,MatToolbarModule,MatListModule,MatTabsModule,MatCardModule,MatSelectModule,MatProgressSpinnerModule,MatDialogModule,MatTableModule,MatSortModule,MatPaginatorModule]
 })
 export class MaterialModule{
 
