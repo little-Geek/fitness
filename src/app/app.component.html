@@ -1,11 +1,37 @@
-<router-outlet></router-outlet>
+
 
 
 <mat-sidenav-container class="example-container" >
-    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav  role="navigation" #sidenav>
+        <p>
+            content
+        </p> </mat-sidenav>
     <mat-sidenav-content>
-        <router-outlet></router-outlet>
+
+        <mat-toolbar color="primary">
+            <span>My Application</span>
+          
+          <div>
+<button  class="primary" (click)="sidenav.toggle()">Toggle SideNav</button>
+</div>
+
+<div>
+    Logo
+</div>
+
+<div>
+    <a routerLink="/signup">SignUp</a>
+    <a routerLink="/signup">Login</a>
+    <a routerLink="/signup">Training</a>
+
+</div>
+</mat-toolbar>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+       
     </mat-sidenav-content>
   </mat-sidenav-container>
 
- 
+  
