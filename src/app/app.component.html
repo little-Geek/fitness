@@ -12,14 +12,14 @@
             <span>My Application</span>
           
           <div>
-<button  class="primary" (click)="sidenav.toggle()">Toggle SideNav</button>
+<button  class="primary" (click)="sidenav.toggle()" mat-icon-button><mat-icon>  menu</mat-icon> </button>
 </div>
 
 <div>
     Logo
 </div>
 
-<div>
+<div fxFlex fxLayout fxLayoutAlign="flex-end">
     <a routerLink="/signup">SignUp</a>
     <a routerLink="/signup">Login</a>
     <a routerLink="/signup">Training</a>
